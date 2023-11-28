@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .dashboard-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .dashboard-section {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .dashboard-section:hover {
+            background-color: #f0f0f0;
+        }
+
+        .dashboard-section h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .dashboard-section p {
+            color: #666;
+        }
+
+        /* Add styling for responsiveness */
+        @media (max-width: 768px) {
+            .dashboard-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dashboard-section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="dashboard-section" onclick="window.location.href='http://127.0.0.1:5000/submit_records'">
+            <h2>Submit Records</h2>
+            <p>Click to go to the Submit Records page</p>
+        </div>
+
+        <div class="dashboard-section" onclick="window.location.href='http://127.0.0.1:5000/retrieve_records'">
+            <h2>Retrieve Records</h2>
+            <p>Click to go to the Retrieve Records page</p>
+        </div>
+    </div>
+</body>
+</html>
