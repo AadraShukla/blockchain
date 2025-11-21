@@ -1,12 +1,18 @@
 🏥 Medical Records Blockchain
 A secure, decentralized system for storing and retrieving medical records using blockchain technology with hybrid encryption (RSA + AES).
+
 ✨ Key Features
 
 🔐 Hybrid Encryption: Combines RSA (2048-bit) and AES-256 encryption for optimal security and performance
+
 ⛓️ Blockchain Storage: Immutable, tamper-proof medical record storage with proof-of-work validation
+
 🔒 Data Privacy: End-to-end encryption ensures only authorized parties can access sensitive medical data
+
 👨‍⚕️ Access Control: Role-based access with doctor ID verification
+
 💾 Persistent Storage: Automatic blockchain serialization with pickle for data persistence
+
 🌐 Web Interface: Clean, user-friendly Flask-based dashboard for record submission and retrieval
 
 🛠️ Tech Stack
